@@ -1,0 +1,31 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{sidewaystable}[p]
+\centering
+\caption{Regressions Considering Weights}
+\label{tab:reg3}
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcclccccc}
+\hline
+\multicolumn{1}{c}{} & \multicolumn{8}{c}{Dependent Variable}                                                                   \\ \cline{2-9} 
+                     & \multicolumn{2}{c}{Without Weights\(^1\)} &  & \multicolumn{5}{c}{Weighted}                              \\ \cline{2-3} \cline{5-9} 
+                     & (1)                 & (2)                 &  & (3)       & (4)       & (5)       & (6)       & (7)       \\ \hline
+Grit                 & -0.465*             & -0.476*             &  & -0.498*** & -0.503*** & -0.538*** & -0.519*** &           \\
+                     & (0.240)             & (0.259)             &  & (0.045)   & (0.045)   & (0.046)   & (0.045)   &           \\
+Short Delay          & 1.009***            & 0.723**             &  & 0.752***  & 0.760***  & 0.580***  &           & 0.769***  \\
+                     & (0.316)             & (0.333)             &  & (0.059)   & (0.059)   & (0.050)   &           & (0.059)   \\
+Long Delay           & -0.609*             & -0.343              &  & -0.321*** & -0.392*** &           & 0.065     & -0.389*** \\
+                     & (0.319)             & (0.335)             &  & (0.059)   & (0.059)   &           & (0.049)   & (0.059)   \\
+CA1                  & 0.090               & 0.133               &  & 0.138***  &           & 0.154***  & 0.134***  & 0.130***  \\
+                     & (0.102)             & (0.108)             &  & (0.019)   &           & (0.019)   & (0.019)   & (0.019)   \\
+Age                  & -0.027***           & -0.017*             &  &           & -0.012*** & -0.011*** & -0.011*** & -0.011*** \\
+                     & (0.009)             & (0.010)             &  &           & (0.002)   & (0.002)   & (0.002)   & (0.002)   \\
+Active loans         &                     & -1.772***           &  & -1.576*** & -1.531*** & -1.560*** & -1.579*** & -1.530*** \\
+                     &                     & (0.223)             &  & (0.039)   & (0.039)   & (0.039)   & (0.039)   & (0.039)   \\ \hline
+AIC                  & 648.59              & 574.49              &  & 17370.44  & 17373.04  & 17353.48  & 17490.24  & 17450.48  \\
+BIC                  & 674.49              & 604.09              &  & 17420.89  & 17423.49  & 17403.93  & 17540.69  & 17500.93  \\
+Observations         & 299                 & 299                 &  & 9,972     & 9,972     & 9,972     & 9,972     & 9,972     \\ \hline
+\end{tabular}%
+%}
+\caption*{\footnotesize{Note: Regressions Considering Weights}}
+\end{sidewaystable}

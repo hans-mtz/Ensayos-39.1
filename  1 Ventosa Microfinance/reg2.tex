@@ -1,0 +1,20 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[h]
+\centering
+\caption{Marginal Effects (1)}
+\label{tab:reg2}
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}llll@{}}
+\toprule
+            & Current & Low Arrear & High arrear \\ \midrule
+Grit        & 0.087   & -0.028     & -0.059      \\
+Short Delay & -0.156  & 0.012      & 0.144       \\
+Long Delay  & 0.093   & -0.039     & -0.054      \\
+CA1         & -0.019  & 0.006      & 0.013       \\
+Age         & 0.003   & -0.001     & -0.002      \\ \bottomrule
+\end{tabular}%
+%}
+\caption*{\footnotesize{Note: All marginal effects are significant at the 1 \% level.}}
+\end{table}

@@ -1,0 +1,31 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{booktabs}
+% \usepackage{graphicx}
+\begin{table}[h]
+\centering
+\caption{Regressions Considering Weights}
+\label{tab:reg1}
+%\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lll@{}}
+\toprule
+             & \multicolumn{2}{l}{Dependent Variable} \\
+             & \multicolumn{2}{l}{}                   \\ \midrule
+             & (1)                & (2)               \\ \midrule
+Grit         & -0.446***          & -0.528***         \\
+             & (0.044)            & (0.046)           \\
+Short Delay  & 0.919***           & 0.781***          \\
+             &                    & (0.059)           \\
+Long Delay   & -0.448***          & -0.364***         \\
+             & (0.057)            & (0.019)           \\
+CA1          & 0.100***           & 0.146***          \\
+             & (0.019)            & (0.019)           \\
+Age          & -0.018***          & -0.012***         \\
+             & (0.002)            & (0.002)           \\
+Active loans &                    & -1.550***         \\
+             &                    & (0.039)           \\ \midrule
+AIC          & 18973.63           & 17317.37          \\
+BIC          & 19024.08           & 17375.03          \\
+Observations & 9972               & 9972              \\ \bottomrule
+\end{tabular}%
+%}
+\end{table}
